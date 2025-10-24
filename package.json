@@ -1,0 +1,15 @@
+{
+  "name": "auto-run-cpp-extension",
+  "version": "1.0.0",
+  "description": "An extension to run single C++ files with a button.",
+  "keywords": [
+    "vscode"
+  ],
+  "license": "MIT",
+  "author": "Haohao123coding",
+  "type": "commonjs",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo no_test"
+  }
+}
