@@ -1,0 +1,15 @@
+# OS Files
+.DS_Store
+
+# Node.js Files
+/node_modules/
+
+# VS Code Files
+/.vscode/
+
+# Output Directories
+/out/
+
+# Binary Files
+*.exe
+*.vsix
