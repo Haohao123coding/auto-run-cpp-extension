@@ -13,6 +13,10 @@
     "author": "Haohao123coding",
     "type": "commonjs",
     "main": "./src/main.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Haohao123coding/auto-run-cpp-extension"
+    },
     "engines": {
         "vscode": "^1.74.0"
     },
