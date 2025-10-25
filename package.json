@@ -27,7 +27,19 @@
             {
                 "command": "auto-run-cpp.compileCommand",
                 "title": "Compile C++ File",
-                "icon": "$(zap)",
+                "icon": "$(gear)",
+                "category": "C++"
+            },
+            {
+                "command": "auto-run-cpp.runCommand",
+                "title": "Run C++ File",
+                "icon": "$(play)",
+                "category": "C++"
+            },
+            {
+                "command": "auto-run-cpp.compileAndRunCommand",
+                "title": "Compile and Run C++ File",
+                "icon": "$(play-circle)",
                 "category": "C++"
             }
         ],
@@ -35,7 +47,17 @@
             "editor/title": [
                 {
                     "command": "auto-run-cpp.compileCommand",
-                    "group": "navigation",
+                    "group": "navigation@100",
+                    "when": "resourceLangId == cpp"
+                },
+                {
+                    "command": "auto-run-cpp.runCommand",
+                    "group": "navigation@101",
+                    "when": "resourceLangId == cpp"
+                },
+                {
+                    "command": "auto-run-cpp.compileAndRunCommand",
+                    "group": "navigation@102",
                     "when": "resourceLangId == cpp"
                 }
             ]
