@@ -25,8 +25,8 @@
     "contributes": {
         "commands": [
             {
-                "command": "auto-run-cpp.runCommand",
-                "title": "Run C++ File",
+                "command": "auto-run-cpp.compileCommand",
+                "title": "Compile C++ File",
                 "icon": "$(zap)",
                 "category": "C++"
             }
@@ -34,7 +34,7 @@
         "menus": {
             "editor/title": [
                 {
-                    "command": "auto-run-cpp.runCommand",
+                    "command": "auto-run-cpp.compileCommand",
                     "group": "navigation",
                     "when": "resourceLangId == cpp"
                 }
