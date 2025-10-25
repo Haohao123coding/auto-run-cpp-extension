@@ -1,11 +1,16 @@
 const vscode = require('vscode');
 const path = require('path');
 
+function getCompileFlags() {
+    const config = vscode.workspace.getConfiguration('autoRunCpp');
+    return config.get('additionalCompileFlags', '-O2 -std=c++14 -static');
+}
+
 function compileCommand(terminal){
     const editor = vscode.window.activeTextEditor;
     const document = editor.document;
     const filePath = document.fileName;
-    const additionalCompileCommand = "-std=c++14 -O2 -static";
+    const additionalCompileCommand = getCompileFlags();
 
     vscode.window.showInformationMessage('正在编译 C++ 文件...');
 

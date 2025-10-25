@@ -65,6 +65,16 @@
                     "when": "resourceLangId == cpp"
                 }
             ]
+        },
+        "configuration": {
+            "title": "Auto Run C++",
+            "properties": {
+                "autoRunCpp.additionalCompileFlags": {
+                    "type": "string",
+                    "default": "-O2 -std=c++14 -static",
+                    "description": "额外的 C++ 编译选项"
+                }
+            }
         }
     },
     "scripts": {
