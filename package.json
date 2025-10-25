@@ -1,14 +1,46 @@
 {
     "name": "auto-run-cpp-extension",
+    "displayName": "Auto Run C++",
     "version": "1.0.0",
     "description": "An extension to run single C++ files with a button.",
     "keywords": [
-        "vscode"
+        "vscode",
+        "cpp",
+        "c++",
+        "run"
     ],
     "license": "MIT",
     "author": "Haohao123coding",
     "type": "commonjs",
-    "main": "src/main.js",
+    "main": "./src/main.js",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "auto-run-cpp.runCommand",
+                "title": "Run C++ File",
+                "icon": "$(zap)",
+                "category": "C++"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "auto-run-cpp.runCommand",
+                    "group": "navigation",
+                    "when": "resourceLangId == cpp"
+                }
+            ]
+        }
+    },
     "scripts": {
         "test": "echo no_test"
     }
