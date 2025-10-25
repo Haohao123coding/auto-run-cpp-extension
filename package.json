@@ -3,6 +3,7 @@
     "displayName": "Auto Run C++",
     "version": "1.0.0",
     "description": "An extension to run single C++ files with a button.",
+    "icon": "images/icon.png",
     "keywords": [
         "vscode",
         "cpp",
